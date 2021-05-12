@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ProcessPage</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <form action="/process" method="post">
+        <h1>Process Data</h1>
+        <p>Delete Data 
+            <input class="checkbox" type="radio" id="radioYesAudit" name="DeleteData" value="Yes" />
+            <label for="radioYesAudit">Yes</label>
+            <input class="checkbox" type="radio" id="DeleteNo" name="DeleteData" value="No" />
+            <label for="DeleteNo">No</label>
+        </p><br>
+        <p>Export Data </p>
+            <input type="radio" id="DataExportZip" name="ExportData" value="Zip">
+            <label for="DataExportZip">export as zip</label><br>
+            <input type="radio" id="DataExportCsv" name="ExportData" value="Csv">
+            <label for="DataExportCsv">Export as csv</label><br><br>
+
+        <p>Export Picture</p>
+            <input type="radio" id="PictureExportZip" name="ExportPicture" value="Zip">
+            <label for="PictureExportZip">Export as Zip</label><br>
+            <input type="radio" id="PictureExportCsv" name="ExportPicture" value="Csv">
+            <label for="PictureExportCsv">Export as Csv</label><br><br>
+
+        <p>Copy Data</p>
+            <input type="radio" id="CopyDataYes" name="CopyData" value="Zip">
+            <label for="CopyDataYes">Yes</label><br>
+            <input type="radio" id="CopyDataNo" name="CopyData" value="Csv">
+            <label for="CopyDataNo">No</label><br><br>
+            
+        <p>Enable write-protection 
+            <input class="checkbox" type="radio" id="WriteProtectionYes" name="WriteProtection" value="Yes" />
+            <label for="WriteProtectionYes">Yes</label>
+            <input class="checkbox" type="radio" id="WriteProtectionNo" name="WriteProtection" value="No" />
+            <label for="WriteProtectionNo">No</label>
+        </p><br>
+        <input type="submit" value="Continue">
+    </form>
+</body>
+
+</html>
+

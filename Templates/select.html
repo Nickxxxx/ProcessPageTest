@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ProcessPage</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <form action="/select" method="post">
+        <h1>Process Data</h1>
+        <p>Select Batch ID 
+            <input type="text" id="BatchID" name="SelectBatchID" value="" />
+            <label for="BatchID">Batch ID</label>
+        </p><br>
+
+        <p>Select specific Date
+            <input type="text" id="TimeFrom" name="TimeSelectFrom" value="" />
+            <label for="TimeFrom">From</label>
+            <input type="text" id="TimeTo" name="TimeSelectTo" value="" />
+            <label for="TimeTo">To</label>
+        </p><br>
+
+        <input type="submit" value="Continue">
+    </form>
+</body>
+
+</html>

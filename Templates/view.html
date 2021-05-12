@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ProcessPage</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <form action="/view" method="post">
+        <h1>View Data</h1>
+        
+        <table>
+            <tr>
+                <th>X-Value</th>
+                <th>Y_Value</th>
+            </tr>
+            { % for value in len %}
+            <tr>
+                <td>{{ x_selected[value] }}</td>
+                <td>{{ y_selected[value] }}</td>
+            </tr>
+            { % eendfor %}
+        </table>
+
+        <input type="submit" value="Continue">
+    </form>
+</body>
+
+</html>
